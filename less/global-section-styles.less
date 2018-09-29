@@ -1,0 +1,65 @@
+//las medidas comienzan en 1920px de ancho
+
+#nosotros, #servicios {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    min-height: 1000px;
+}
+
+#portfolio {
+    position: relative;
+    width: 100%;
+}
+
+#nosotros, #portfolio {
+    background: white;
+}
+
+.title {
+    position: relative;
+    width: 95%;
+    height: fit-content;
+    margin-left: 5%;
+    padding-top: 3%;
+    border-bottom: 3px solid blue;
+    border-radius: 3px;
+    font-size: 32px;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    // height: 90%;
+}
+
+.content .icon-id {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    // border: 1px solid black;
+    right: 5%;
+    top: 3%;
+}
+
+.content .icon-id img {
+    height: 100%;
+    width: auto;
+}
+
+#servicios {
+    background: grey;
+}
+
+@media screen and (max-width: 1366px) {
+    #nosotros, #servicios {
+        height: 90vh;
+        min-height: 600px ;
+        max-height: 768px;
+    }
+
+    .title {
+        padding-top: 3%;
+        font-size: 18px;
+    }
+}
