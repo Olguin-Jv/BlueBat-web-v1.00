@@ -1,5 +1,6 @@
 //las medidas comienzan en 1920px de ancho
 
+// SECCTION
 #nosotros, #servicios {
     position: relative;
     width: 100%;
@@ -10,6 +11,12 @@
 #portfolio {
     position: relative;
     width: 100%;
+}
+
+#servicios {
+    height: 1550px;
+    background: thistle;
+    background-image: url("../img/dots-pattern.png");
 }
 
 #nosotros, #portfolio {
@@ -30,30 +37,26 @@
 .content {
     position: relative;
     width: 100%;
-    // height: 90%;
+    height: 90%;
 }
 
-.content .icon-id {
+.title .icon-id {
     position: absolute;
     width: 100px;
     height: 100px;
     // border: 1px solid black;
     right: 5%;
-    top: 3%;
+    top: 130%;
+    z-index: 50;
 }
 
-.content .icon-id img {
+.title .icon-id img {
     height: 100%;
     width: auto;
 }
 
-#servicios {
-    background: grey;
-}
-
 @media screen and (max-width: 1366px) {
-    #nosotros, #servicios {
-        height: 90vh;
+    #nosotros {
         min-height: 600px ;
         max-height: 768px;
     }
@@ -61,5 +64,10 @@
     .title {
         padding-top: 3%;
         font-size: 18px;
+    }
+
+    .content .icon-id {
+        width: 65px;
+        height: 65px;
     }
 }

@@ -40,7 +40,7 @@ nav {
   display: flex;
   -webkit-box-shadow: 3px 3px 9px #0000002a;
   box-shadow: 3px 3px 9px #0000002a;
-  z-index: 10;
+  z-index: 60;
 }
 nav #logo {
   height: 100%;
@@ -108,7 +108,8 @@ nav #lang button {
   font-weight: 800;
   font-size: 15px;
   padding: 0 4.5px;
-  border: 2px solid black;
+  border: 2px solid #999999;
+  color: #999999;
   border-radius: 100%;
   background: none;
   outline: none;
@@ -163,22 +164,19 @@ nav #lang button {
 }
 #box-nosotros {
   width: 100%;
-  height: 75%;
 }
 #description-nosotros {
   position: relative;
   width: 70%;
-  height: 55%;
-  margin: 0 auto;
+  margin: 0% auto;
 }
 #description-nosotros p {
   font-size: 24px;
   text-align: center;
-  padding: 0 10%;
+  padding: 5% 10%;
 }
 #nosotros-art {
   width: 70%;
-  height: 45%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -191,7 +189,7 @@ nav #lang button {
   align-items: center;
 }
 #nosotros-art img {
-  width: 70%;
+  width: 85%;
   height: auto;
 }
 @media screen and (max-width: 1570px) {
@@ -207,7 +205,6 @@ nav #lang button {
 @media screen and (max-width: 1175px) {
   #description-nosotros p {
     font-size: 17px;
-    padding: 0 6%;
   }
 }
 #nosotros,
@@ -220,6 +217,11 @@ nav #lang button {
 #portfolio {
   position: relative;
   width: 100%;
+}
+#servicios {
+  height: 1550px;
+  background: thistle;
+  background-image: url("../img/dots-pattern.png");
 }
 #nosotros,
 #portfolio {
@@ -240,25 +242,22 @@ nav #lang button {
 .content {
   position: relative;
   width: 100%;
+  height: 90%;
 }
-.content .icon-id {
+.title .icon-id {
   position: absolute;
   width: 100px;
   height: 100px;
   right: 5%;
-  top: 3%;
+  top: 130%;
+  z-index: 50;
 }
-.content .icon-id img {
+.title .icon-id img {
   height: 100%;
   width: auto;
 }
-#servicios {
-  background: grey;
-}
 @media screen and (max-width: 1366px) {
-  #nosotros,
-  #servicios {
-    height: 90vh;
+  #nosotros {
     min-height: 600px ;
     max-height: 768px;
   }
@@ -266,11 +265,37 @@ nav #lang button {
     padding-top: 3%;
     font-size: 18px;
   }
+  .content .icon-id {
+    width: 65px;
+    height: 65px;
+  }
 }
-#servicios-container {
-  width: 100%;
+#container-servicios {
+  width: 60%;
   height: 100%;
-  background: lightgoldenrodyellow;
+  margin: 40px auto 0 auto;
+  background: blue;
+}
+#container-servicios .box {
+  width: 80%;
+  height: 250px;
+  margin-bottom: 60px;
+  border: 3px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.l {
+  float: left;
+}
+.r {
+  float: right;
+  background: black;
+}
+.box .box-icon {
+  width: 30%;
+  height: 100;
+  border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -281,10 +306,23 @@ nav #lang button {
   -ms-flex-align: center;
   align-items: center;
 }
-#servicios-container #column-container {
-  width: 80%;
-  height: 80%;
-  background: blueviolet;
+.box .box-icon img {
+  width: 100%;
+  height: auto;
+}
+.box .description {
+  width: 70%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 .portfolio-container {
   width: 70%;
@@ -299,16 +337,17 @@ nav #lang button {
   justify-content: space-around;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding: 5% 10%;
+  padding: 1% 10%;
   background: pink;
 }
 .portfolio-container div {
-  width: 40%;
+  width: 44%;
   height: auto;
-  margin: 4% 0;
-  border: 2px solid blue;
+  margin: 2% 1%;
+  border: 1px solid blue;
 }
 .portfolio-container div img {
   width: 100%;
   height: auto;
+  border: 4px solid blue;
 }

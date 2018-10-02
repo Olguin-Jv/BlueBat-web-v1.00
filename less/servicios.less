@@ -1,15 +1,46 @@
-#servicios-container {
-    width: 100%;
+#container-servicios {
+    width: 60%;
     height: 100%;
-    background: lightgoldenrodyellow;
+    margin: 40px auto 0 auto;
+    background: blue;
+
+}
+
+#container-servicios .box {
+    width: 80%;
+    height: 250px;
+    margin-bottom: 60px;
+    border: 3px solid white;
+    display: flex;
+}
+
+.l {
+    float: left;
+}
+
+.r {
+    float: right;
+    background: black;
+}
+
+.box .box-icon {
+    width: 30%;
+    height: 100;
+    border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#servicios-container #column-container{
-    width: 80%;
-    height: 80%;
-    background: blueviolet;
+.box .box-icon img {
+    width: 100%;
+    height: auto;
 }
 
+.box .description {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
