@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
 * {
   margin: 0;
   padding: 0;
@@ -5,9 +9,6 @@
   box-sizing: border-box;
   font-family: 'Catamaran', sans-serif;
   color: #333333;
-}
-html {
-  scroll-behavior: smooth;
 }
 body {
   width: 100%;
@@ -24,8 +25,8 @@ a:active {
 .anchor {
   position: absolute;
   width: 100%;
-  height: 80px;
-  top: -80px;
+  height: 70px;
+  top: -70px;
 }
 nav {
   position: fixed;
@@ -33,7 +34,7 @@ nav {
   width: 100%;
   max-width: 1920px;
   min-width: 768px;
-  height: 80px;
+  height: 70px;
   background: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -151,7 +152,7 @@ nav #lang button {
 }
 #container-nosotros {
   width: 100%;
-  height: 100%;
+  height: 88%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -164,16 +165,19 @@ nav #lang button {
 }
 #box-nosotros {
   width: 100%;
+  min-width: 768px;
 }
 #description-nosotros {
   position: relative;
   width: 70%;
+  min-width: 768px;
+  border: 2px solid black;
   margin: 0% auto;
 }
 #description-nosotros p {
   font-size: 24px;
   text-align: center;
-  padding: 5% 10%;
+  padding: 2.5% 10%;
 }
 #nosotros-art {
   width: 70%;
@@ -189,7 +193,8 @@ nav #lang button {
   align-items: center;
 }
 #nosotros-art img {
-  width: 85%;
+  width: 80%;
+  min-width: 768px;
   height: auto;
 }
 @media screen and (max-width: 1570px) {
@@ -207,19 +212,18 @@ nav #lang button {
     font-size: 17px;
   }
 }
-#nosotros,
-#servicios {
+#nosotros {
   position: relative;
   width: 100%;
   height: 90vh;
   min-height: 1000px;
 }
-#portfolio {
+#portfolio,
+#servicios {
   position: relative;
   width: 100%;
 }
 #servicios {
-  height: 1550px;
   background: thistle;
   background-image: url("../img/dots-pattern.png");
 }
@@ -246,8 +250,8 @@ nav #lang button {
 }
 .title .icon-id {
   position: absolute;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   right: 5%;
   top: 130%;
   z-index: 50;
@@ -271,31 +275,40 @@ nav #lang button {
   }
 }
 #container-servicios {
-  width: 60%;
-  height: 100%;
-  margin: 40px auto 0 auto;
-  background: blue;
+  position: relative;
+  padding-top: 40px;
+  width: 75%;
+  max-width: 1150px;
+  min-width: 768px;
+  margin: 40px auto;
+  background: grey;
+  height: 500px;
 }
 #container-servicios .box {
-  width: 80%;
-  height: 250px;
+  width: 60%;
+  min-width: 680px;
+  height: 150px;
   margin-bottom: 60px;
-  border: 3px solid white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 .l {
   float: left;
 }
+.r h3,
+.r p {
+  text-align: right;
+}
 .r {
   float: right;
-  background: black;
 }
 .box .box-icon {
   width: 30%;
-  height: 100;
-  border: 1px solid black;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -307,11 +320,11 @@ nav #lang button {
   align-items: center;
 }
 .box .box-icon img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 115%;
 }
 .box .description {
-  width: 70%;
+  width: 65%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -323,6 +336,13 @@ nav #lang button {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+}
+.description h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.description p {
+  font-size: 17px;
 }
 .portfolio-container {
   width: 70%;

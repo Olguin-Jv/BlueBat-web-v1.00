@@ -1,46 +1,62 @@
 #container-servicios {
-    width: 60%;
-    height: 100%;
-    margin: 40px auto 0 auto;
-    background: blue;
-
+    position: relative;
+    padding-top: 40px;
+    width: 75%;
+    max-width: 1150px;
+    min-width: 768px;
+    margin: 40px auto;
+    background: grey;
+    height: 500px; // arreglar esto!
 }
 
 #container-servicios .box {
-    width: 80%;
-    height: 250px;
+    width: 60%;
+    min-width: 680px;
+    height: 150px;
     margin-bottom: 60px;
-    border: 3px solid white;
     display: flex;
+    justify-content: space-between;
 }
 
 .l {
     float: left;
 }
 
+.r h3, .r p {
+    text-align: right;
+}
+
 .r {
     float: right;
-    background: black;
 }
 
 .box .box-icon {
     width: 30%;
-    height: 100;
-    border: 1px solid black;
+    height: 100%;
+    // border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .box .box-icon img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 115%;
 }
 
 .box .description {
-    width: 70%;
+    width: 65%;
     height: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+
+.description h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.description p {
+    font-size: 17px;
 }
