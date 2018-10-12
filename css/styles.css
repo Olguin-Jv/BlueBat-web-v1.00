@@ -247,6 +247,7 @@ nav #lang button {
   position: relative;
   width: 100%;
   height: 90%;
+  background: rgba(255, 255, 255, 0.1);
 }
 .title .icon-id {
   position: absolute;
@@ -281,8 +282,6 @@ nav #lang button {
   max-width: 1150px;
   min-width: 768px;
   margin: 40px auto;
-  background: grey;
-  height: 500px;
 }
 #container-servicios .box {
   width: 60%;
@@ -296,15 +295,24 @@ nav #lang button {
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
-.l {
-  float: left;
+.left,
+.right {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
-.r h3,
-.r p {
+.right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+.right h3,
+.right p {
   text-align: right;
-}
-.r {
-  float: right;
 }
 .box .box-icon {
   width: 30%;
