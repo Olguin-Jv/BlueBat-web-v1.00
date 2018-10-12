@@ -351,7 +351,7 @@ nav #lang button {
   font-size: 17px;
 }
 .portfolio-container {
-  width: 80%;
+  width: 95%;
   min-width: 700px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -414,4 +414,56 @@ nav #lang button {
   background: white;
   padding: 0 25px;
   border-radius: 30px;
+}
+footer {
+  position: relative;
+  background: white;
+  padding: 30px;
+}
+#redes {
+  position: absolute;
+  right: 0px;
+  top: 55px;
+  width: 200px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#redes a {
+  margin-right: 20px;
+}
+#redes a img {
+  height: 100%;
+  width: auto;
+}
+#firma {
+  margin: 0 auto;
+  width: 75%;
+  height: 90px;
+  border: 2px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#f-logo {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 100%;
+}
+#f-logo img {
+  height: 100%;
+  width: auto;
+}
+#f-data {
+  width: 75%;
+  height: 100%;
+  padding-left: 14px;
+  border: 2px solid white;
+}
+#f-data p,
+#f-data p strong {
+  font-size: 14px;
+  line-height: 22px;
 }
