@@ -413,7 +413,7 @@ nav #lang button {
   font-weight: 700;
   color: blue;
   background: white;
-  padding: 0 25px;
+  padding: 5px 25px;
   border-radius: 30px;
 }
 footer {

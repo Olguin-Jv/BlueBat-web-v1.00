@@ -1,11 +1,12 @@
 @import "global.less";
+@import "variables.less";
 
 header {
     position: relative;
     width: 100%;
     height: 130px;
     padding: 50px;
-    background: blue;
+    background: @BlueBatColor;
     display: flex;
     align-items: flex-end;
 }
@@ -35,7 +36,7 @@ header p {
     height: 100%;
     margin-left: 70px;
     padding-top: 70px;
-    border: 2px solid red;
+    // border: 2px solid red;
 }
 
 p.title {
@@ -117,10 +118,14 @@ textarea {
     max-width: 1300px;
     max-height: 300px;
     margin-top: 10px;
-    // border: 2px solid black;
+    // border: 5px solid @BlueBatColor;
 }
 
 @import "footer.less";
+
+footer {
+    border-top: 5px solid @BlueBatColor;
+}
 
 @media screen and (max-width: 700px) {
 
