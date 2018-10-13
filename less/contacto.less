@@ -9,6 +9,16 @@ header {
     background: @BlueBatColor;
     display: flex;
     align-items: flex-end;
+    border: 2px solid pink;
+}
+
+header img {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    right: 60px;
+    bottom: 20px;
+    display: none;
 }
 
 header p {
@@ -19,6 +29,7 @@ header p {
 }
 
 #formulario {
+    border: 2px solid pink;
     position: relative;
     width: 100%;
 }
@@ -29,9 +40,12 @@ header p {
     height: 80px;
     top: 20px;
     right: 60px;
+    display: initial;
 }
 
 #formulario form {
+    border: 2px solid pink;
+
     width: 80%;
     height: 100%;
     margin-left: 70px;
@@ -81,13 +95,13 @@ span input {
     height: 35px;
     font-size: 22px;
     padding-left: 10px;
-    // border: 1px solid black;
+    border: 1px solid @GlobalBlack;
 }
 
 #options {
     width: 100%;
     max-width: 1000px;
-    min-width: 700px;;
+    min-width: 700px;
     padding-top: 25px;
     padding-bottom: 35px;
     display: flex;
@@ -118,7 +132,8 @@ textarea {
     max-width: 1300px;
     max-height: 300px;
     margin-top: 10px;
-    // border: 5px solid @BlueBatColor;
+    margin-bottom: 35px;
+    border: 5px solid @BlueBatColor;
 }
 
 @import "footer.less";
@@ -127,10 +142,44 @@ footer {
     border-top: 5px solid @BlueBatColor;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1366px) {
+
+    p.text {
+        max-width: 1000px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    header img {
+        display: initial;
+    }
+
+    #formulario img {
+        display: none;
+    }
 
     #formulario form {
         margin-left: 50px;
+    }
+
+    #data-inputs span {
+        width: 100%;
+    }
+
+    #options {
+        flex-direction: column;
+        min-width: initial;
+    }
+
+    #options span {
+        flex-direction: row-reverse;
+        padding-bottom: 10px;
+    }
+
+    #options span p {
+        padding-left: 8px;
     }
 
 }
