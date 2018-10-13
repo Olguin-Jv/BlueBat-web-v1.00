@@ -2,7 +2,6 @@ footer {
     position: relative;
     padding: 30px;
     width: 100%;
-    background: pink;
     max-width: 1920px;
 }
 
@@ -11,13 +10,16 @@ footer {
     right: 0;
     top: 0px;
     top: 55px;
-    width: fit-content;
+    width: 170px;
     height: 40px;
-    border: 3px solid white;
+    display: flex;
+    justify-content: space-between;
+    // border: 3px solid black;
 }
 
 #redes a {
-    margin-right: 20px;
+    height: 100%;
+    width: auto;
 }
 
 #redes a img{
@@ -29,7 +31,6 @@ footer {
     margin: 0 auto;
     width: 75%;
     height: 90px;
-    border: 2px solid white;
     display: flex;
 }
 
@@ -47,10 +48,46 @@ footer {
     width: 75%;
     height: 100%;
     padding-left: 14px;
-    border: 2px solid white;
 }
 
 #f-data p, #f-data p strong {
     font-size: 14px;
     line-height: 22px;
+}
+
+@media screen and (max-width: 666px) {
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #redes {
+        position: initial;
+        margin: 0 auto;
+        width: 170px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px
+    }
+
+    #redes a, #redes a img  {
+        margin: 0;
+    }
+
+    #firma {
+        width: 95%;
+        height: 140px;
+        justify-content: center;
+        align-content: center;
+        padding-top: 15px;
+        border-top: 1px solid grey;
+    }
+
+    #f-data {
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }

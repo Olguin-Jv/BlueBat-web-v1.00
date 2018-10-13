@@ -9,7 +9,7 @@ header {
     background: @BlueBatColor;
     display: flex;
     align-items: flex-end;
-    border: 2px solid pink;
+    // border: 2px solid pink;
 }
 
 header img {
@@ -29,7 +29,7 @@ header p {
 }
 
 #formulario {
-    border: 2px solid pink;
+    // border: 2px solid pink;
     position: relative;
     width: 100%;
 }
@@ -44,8 +44,6 @@ header p {
 }
 
 #formulario form {
-    border: 2px solid pink;
-
     width: 80%;
     height: 100%;
     margin-left: 70px;
@@ -78,7 +76,7 @@ p.text {
 
 #data-inputs span {
     width: 45%;
-    min-width: 300px;
+    // min-width: 300px;
     // border: 2px solid white;
     padding-bottom: 20px;
 }
@@ -133,7 +131,10 @@ textarea {
     max-height: 300px;
     margin-top: 10px;
     margin-bottom: 35px;
-    border: 5px solid @BlueBatColor;
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid @GlobalBlack;
+    outline: none;
 }
 
 @import "footer.less";
@@ -182,4 +183,23 @@ footer {
         padding-left: 8px;
     }
 
+}
+
+@media screen and (max-width: 480px) {
+
+    header {
+        padding: 50px 30px;
+    }
+
+    header img {
+        right: 30px;
+    }
+
+    #formulario form {
+        margin-left: 30px;
+    }
+
+    textarea {
+        margin-top: 20px;
+    }
 }

@@ -13,6 +13,7 @@ html {
 body {
   width: 100%;
   max-width: 1920px;
+  min-width: 320px;
   margin: 0 auto;
 }
 a:link,
@@ -419,7 +420,6 @@ footer {
   position: relative;
   padding: 30px;
   width: 100%;
-  background: pink;
   max-width: 1920px;
 }
 #redes {
@@ -427,14 +427,18 @@ footer {
   right: 0;
   top: 0px;
   top: 55px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 170px;
   height: 40px;
-  border: 3px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 #redes a {
-  margin-right: 20px;
+  height: 100%;
+  width: auto;
 }
 #redes a img {
   height: 100%;
@@ -444,7 +448,6 @@ footer {
   margin: 0 auto;
   width: 75%;
   height: 90px;
-  border: 2px solid white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -463,10 +466,62 @@ footer {
   width: 75%;
   height: 100%;
   padding-left: 14px;
-  border: 2px solid white;
 }
 #f-data p,
 #f-data p strong {
   font-size: 14px;
   line-height: 22px;
+}
+@media screen and (max-width: 666px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  #redes {
+    position: initial;
+    margin: 0 auto;
+    width: 170px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  #redes a,
+  #redes a img {
+    margin: 0;
+  }
+  #firma {
+    width: 95%;
+    height: 140px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    padding-top: 15px;
+    border-top: 1px solid grey;
+  }
+  #f-data {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
 }
