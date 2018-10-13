@@ -1,0 +1,209 @@
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Catamaran', sans-serif;
+  color: #333333;
+}
+body {
+  width: 100%;
+  max-width: 1920px;
+  min-width: 768px;
+  margin: 0 auto;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+.anchor {
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  top: -70px;
+}
+header {
+  position: relative;
+  width: 100%;
+  height: 130px;
+  padding: 50px;
+  background: blue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+header p {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 0px;
+  color: white;
+}
+#formulario {
+  position: relative;
+  width: 100%;
+}
+#formulario img {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 20px;
+  right: 60px;
+}
+#formulario form {
+  width: 80%;
+  height: 100%;
+  margin-left: 70px;
+  padding-top: 70px;
+  border: 2px solid red;
+}
+p.title {
+  font-size: 24px;
+  font-weight: 700;
+  width: 100%;
+}
+p.text {
+  font-size: 18px;
+  line-height: 24px;
+  max-width: 1300px;
+  padding-top: 10px;
+  width: 100%;
+}
+#data-inputs {
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+#data-inputs span {
+  width: 45%;
+  min-width: 300px;
+  padding-bottom: 20px;
+}
+p.grey {
+  font-size: 18px;
+  padding-left: 10px;
+  color: grey;
+}
+span input {
+  outline: none;
+  width: 90%;
+  height: 35px;
+  font-size: 22px;
+  padding-left: 10px;
+}
+#options {
+  width: 100%;
+  max-width: 1000px;
+  min-width: 700px;
+  padding-top: 25px;
+  padding-bottom: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+#options span {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+#options span p {
+  font-size: 20px;
+  font-weight: 600;
+}
+#options span input[type=radio] {
+  background: none;
+  width: 25px;
+}
+textarea {
+  width: 100%;
+  max-width: 1300px;
+  max-height: 300px;
+  margin-top: 10px;
+}
+footer {
+  position: relative;
+  padding: 30px;
+  width: 100%;
+  max-width: 1920px;
+}
+#redes {
+  position: absolute;
+  right: 0;
+  top: 0px;
+  top: 55px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 40px;
+}
+#redes a {
+  margin-right: 20px;
+}
+#redes a img {
+  height: 100%;
+  width: auto;
+}
+#firma {
+  margin: 0 auto;
+  width: 75%;
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#f-logo {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 100%;
+}
+#f-logo img {
+  height: 100%;
+  width: auto;
+}
+#f-data {
+  width: 75%;
+  height: 100%;
+  padding-left: 14px;
+}
+#f-data p,
+#f-data p strong {
+  font-size: 14px;
+  line-height: 22px;
+}
+@media screen and (max-width: 700px) {
+  #formulario form {
+    margin-left: 50px;
+  }
+}

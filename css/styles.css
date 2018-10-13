@@ -216,6 +216,7 @@ nav #lang button {
   width: 100%;
   height: 90vh;
   min-height: 1000px;
+  max-height: 1080px;
 }
 #portfolio,
 #servicios {
@@ -417,18 +418,19 @@ nav #lang button {
 }
 footer {
   position: relative;
-  background: white;
   padding: 30px;
+  width: 100%;
+  max-width: 1920px;
 }
 #redes {
   position: absolute;
-  right: 0px;
+  right: 0;
+  top: 0px;
   top: 55px;
-  width: 200px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   height: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 #redes a {
   margin-right: 20px;
@@ -441,7 +443,6 @@ footer {
   margin: 0 auto;
   width: 75%;
   height: 90px;
-  border: 2px solid white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -460,7 +461,6 @@ footer {
   width: 75%;
   height: 100%;
   padding-left: 14px;
-  border: 2px solid white;
 }
 #f-data p,
 #f-data p strong {
