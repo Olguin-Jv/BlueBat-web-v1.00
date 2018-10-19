@@ -14,6 +14,15 @@
 <body> <!-- add onresize="function()" -->
 
     <nav> <!--BARRA DE NAVEGACIÓN-->
+        <div id="burger-button">
+            <div id="burger" class="burger-menu">
+                    <span id="burger-top" class="top"></span>
+                    <span id="burger-middle" class="middle"></span>
+                    <span id="burger-bottom" class="bottom"></span>
+            
+                    <button onclick="activateBurguer()"></button>
+            </div>  
+        </div>
         <div id="logo"><img src="img/BlueBatWEB.png" alt="ligo-BlueBat"></div>
         
         <div id="top-menu">
@@ -29,6 +38,17 @@
             <button>es</button>
         </div>
     </nav>
+
+    <div id="menu">
+        
+        <div id="desplegable">
+            <div> <a href="#">nosotros</a> </div>
+            <div> <a href="#">servicios</a> </div>
+            <div> <a href="#">portfolio</a> </div>
+            <div> <a href="#">contacto</a> </div>
+        </div>
+
+    </div>
 
     <section id="hero">
          <div id="anchor-hero" class="anchor"></div>
@@ -68,7 +88,7 @@
         </div>
     </section>
 
-
+<!-- 
     <section id="servicios">
         <div id="servicios-background"></div>
         <div id="anchor-servicios" class="anchor"></div>
@@ -135,7 +155,7 @@
 
 
         </div>
-    </section>
+    </section> -->
     
 
     <!-- <section id="portfolio">
@@ -198,6 +218,6 @@
     
 
    </footer>
-
+<script src="js/scripts.js"></script>
 </body>
 </html>

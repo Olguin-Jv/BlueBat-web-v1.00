@@ -1,20 +1,21 @@
+@import "variables.less";
+
 nav {
     position: fixed;
     top: 0px;
     width: 100%;
     max-width: 1920px;
-    min-width: 768px;
     height: 70px;
     background: white;
     display: flex;
     box-shadow: 3px 3px 9px #0000002a;
-    z-index: 60;
+    z-index: 90;
 }
 
 nav #logo {
     height: 100%;
     width: 20%;
-    //background: pink;
+    min-width: 180px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,16 +24,22 @@ nav #logo {
 nav #logo img {
     height: auto;
     width: 80%;
-    max-width: 280px;
-    min-width: 190px;
+    min-width: 150px;
 }
 
 nav #top-menu {
     height: 100%;
     width: 80%;
-   // background: grey;
 }
 
+/* BOTON HAMBURGUESA */ ////////////////////////////
+#burger-button {
+    position: absolute;
+    display: none;
+    height: 100%;
+    width: 20%;
+    z-index: 100;
+}
 
 nav #top-menu div {
     margin-left: 5%;
@@ -52,11 +59,11 @@ nav #top-menu div a{
 }
 
 nav #top-menu div a:hover{
-    color: rgb(201, 201, 201);
+    color: @a-hover;
 }
 
 nav #top-menu div a:active{
-    color: #b244fd;
+    color: @a-active;
 }
 
 nav #lang {
@@ -69,7 +76,10 @@ nav #lang {
     align-items: center;
 }
 
+//botón de cambio de idioma
+//de momento inactivo y oculto
 nav #lang button {
+    display: none;
     cursor: pointer;
     text-transform: uppercase;
     font-weight: 800;
@@ -83,3 +93,43 @@ nav #lang button {
 }
 
 
+@media screen and (max-width: 1000px) {
+    
+    nav #top-menu div a{
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+
+    nav #top-menu div a{
+        font-size: 14px;
+    }
+
+}
+
+/* ACÁ COMIENZA EL MENÚ HAMBURGUESA */
+@media screen and (max-width: 710px) {
+
+    nav #logo {
+        width: 100%;
+    }
+
+    nav #logo img {
+        max-width: 150px;
+    }
+
+    #burger-button {
+        display: initial;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav #top-menu {
+        display: none;
+    }
+
+
+}
