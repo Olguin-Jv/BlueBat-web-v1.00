@@ -1,3 +1,6 @@
+@button-size: 31px; /* <== DEFINE TAMAÑO DEL BOTÓN */
+@button-width: calc(@button-size * 80 / 100);
+
 @grosor-barra: 14%; /* <== DEFINE GROSOR DE LA BARRA */
 @bar-position: calc(@grosor-barra * 75 / 100);
 @half-bar: calc(@grosor-barra / 2);
@@ -6,8 +9,8 @@
 
 .burger-menu {
     position: relative;
-    width: 40px; /*100px*/
-    height: 25px; /*90px*/
+    width: @button-size;
+    height: @button-width;
     border-radius: 5%;
     display: flex;
     // background: grey;

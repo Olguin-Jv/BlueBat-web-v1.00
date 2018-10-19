@@ -157,13 +157,12 @@ nav #lang button {
     display: none;
   }
 }
+/* <== DEFINE TAMAÑO DEL BOTÓN */
 /* <== DEFINE GROSOR DE LA BARRA */
 .burger-menu {
   position: relative;
-  width: 40px;
-  /*100px*/
-  height: 25px;
-  /*90px*/
+  width: 31px;
+  height: calc(31px * 80 / 100);
   border-radius: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -456,11 +455,6 @@ nav #lang button {
 }
 #menu #desplegable div a:active {
   color: #b244fd;
-}
-@media screen and (max-width: 710px) {
-  #menu {
-    display: initial;
-  }
 }
 /*
 
