@@ -754,9 +754,61 @@ el texto de cada botón alineado al centro (alineado, NO justificado)
 .description p {
   font-size: 17px;
 }
+@media screen and (max-width: 850px) {
+  #container-servicios .box {
+    width: 100%;
+    min-width: initial;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-bottom: 30px;
+  }
+  #container-servicios .left .box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  #container-servicios .right .box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .box .box-icon {
+    width: 50%;
+    min-width: 160px;
+    height: auto;
+  }
+  .box .box-icon img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 15px;
+  }
+  .box .description {
+    width: 90%;
+    max-width: 400px;
+  }
+  #container-servicios h3 {
+    font-size: 18px;
+    padding-bottom: 5px;
+  }
+  .right h3,
+  .left h3 {
+    text-align: center;
+  }
+  .right p {
+    text-align: initial;
+  }
+}
 .portfolio-container {
   width: 95%;
-  min-width: 700px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -774,16 +826,36 @@ el texto de cada botón alineado al centro (alineado, NO justificado)
   width: 44%;
   height: auto;
   margin: 2% 1%;
-  overflow: hidden;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+.portfolio-container div:hover {
+  -webkit-transform: translate(-4px, -4px) scale(1.01);
+  -ms-transform: translate(-4px, -4px) scale(1.01);
+  transform: translate(-4px, -4px) scale(1.01);
 }
 .portfolio-container div img {
   width: 100%;
   height: auto;
-  border: 4px solid blue;
+  border: 1px solid #e6e6e6;
+}
+.p-image,
+.p-text {
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+.portfolio-container div:hover .p-image {
+  -webkit-box-shadow: 2px 2px 6px #e6e6e6;
+  box-shadow: 2px 2px 6px #e6e6e6;
+}
+.portfolio-container div:hover .p-text {
+  text-shadow: 2px 2px 6px #e6e6e6;
 }
 .portfolio-container div p {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 500;
 }
 #ver-mas {
   text-align: center;
@@ -793,6 +865,18 @@ el texto de cada botón alineado al centro (alineado, NO justificado)
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 700;
+}
+@media screen and (max-width: 666px) {
+  .portfolio-container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 580px) {
+  .portfolio-container div {
+    width: 100%;
+    margin: 0;
+    padding-bottom: 15px;
+  }
 }
 #contactanos {
   background: #475dfc;
