@@ -120,6 +120,7 @@ nav #lang button {
   margin-top: 80px;
   width: 100%;
   background: white;
+  overflow: hidden;
 }
 #hero img {
   width: 100%;
@@ -229,6 +230,7 @@ nav #lang button {
     width: 50%;
     height: auto;
     min-width: 170px;
+    max-width: 220px;
     padding-bottom: 50px;
   }
 }
@@ -245,8 +247,15 @@ nav #lang button {
   width: 100%;
 }
 #servicios {
-  background: thistle;
+  position: relative;
+  background: rgba(21, 104, 204, 0.05);
+}
+#servicios-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
   background-image: url("../img/dots-pattern.png");
+  opacity: .07;
 }
 #nosotros,
 #portfolio {
@@ -260,7 +269,7 @@ nav #lang button {
   height: fit-content;
   margin-left: 5%;
   padding-top: 3%;
-  border-bottom: 3px solid blue;
+  border-bottom: 3px solid #475dfc;
   font-size: 32px;
 }
 .content {
@@ -270,8 +279,8 @@ nav #lang button {
 }
 .title .icon-id {
   position: absolute;
-  width: 80px;
-  height: 80px;
+  width: 65px;
+  height: 65px;
   right: 5%;
   top: 130%;
   z-index: 50;
@@ -288,10 +297,6 @@ nav #lang button {
   .title {
     padding-top: 3%;
     font-size: 18px;
-  }
-  .content .icon-id {
-    width: 65px;
-    height: 65px;
   }
 }
 @media screen and (max-width: 850px) {
@@ -316,7 +321,7 @@ nav #lang button {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
-    border-bottom: 5px solid blue;
+    border-bottom: 5px solid #475dfc;
   }
   .title .icon-id {
     top: initial;
@@ -442,7 +447,7 @@ nav #lang button {
   font-weight: 700;
 }
 #contactanos {
-  background: blue;
+  background: #475dfc;
   text-align: center;
   padding: 35px;
 }
@@ -461,7 +466,7 @@ nav #lang button {
 #contactanos a {
   font-size: 22px;
   font-weight: 700;
-  color: blue;
+  color: #475dfc;
   background: white;
   padding: 5px 25px;
   border-radius: 30px;
