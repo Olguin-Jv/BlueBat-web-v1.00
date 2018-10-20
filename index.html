@@ -42,18 +42,19 @@
     <div id="menu">
         
         <div id="desplegable">
-            <div> <a href="#">nosotros</a> </div>
-            <div> <a href="#">servicios</a> </div>
-            <div> <a href="#">portfolio</a> </div>
-            <div> <a href="#">contacto</a> </div>
+            <div> <a class="menu-button" href="#">nosotros</a> </div>
+            <div> <a class="menu-button" href="#">servicios</a> </div>
+            <div> <a class="menu-button" href="#">portfolio</a> </div>
+            <div> <a class="menu-button" href="#">contacto</a> </div>
         </div>
 
     </div>
 
-    <section id="hero">
+    <section id="hero" onresize="changeBackground()">
          <div id="anchor-hero" class="anchor"></div>
 
-        <img src="img/heroIMG.jpg" alt="hero-img">
+        <img id="background" src="img/hero/hq-hero.png" alt="hero-img">
+        <img id="lq-background" src="img/hero/lq-hero.png" alt="">
         <div id="down-arrow"><a href="#anchor-nosotros"><img src="img/flechasHome.png" alt="hero-down-arrow"></a></div>
     </section>
     
@@ -168,7 +169,7 @@
             
             <div class="portfolio-container">
 
-                <div> <a href=""> <img class="p-image" src="img/empty-pattern.png" alt=""> </a> <p class="p-text">Hola mundo!</p> </div>
+                <div> <a href=""> <img class="p-image" src="img/portfolio/port1MC.png" alt=""> </a> <p class="p-text">Carvallo & Marino - Arquitectos</p> </div>
                 <div> <a href=""> <img class="p-image" src="img/empty-pattern.png" alt=""> </a> <p class="p-text">Hola mundo!</p> </div>
                 <div> <a href=""> <img class="p-image" src="img/empty-pattern.png" alt=""> </a> <p class="p-text">Hola mundo!</p> </div>
                 <div> <a href=""> <img class="p-image" src="img/empty-pattern.png" alt=""> </a> <p class="p-text">Hola mundo!</p> </div>
@@ -184,7 +185,7 @@
         <img src="img/white-airplane.png" alt="white-airplane">
         <p>¿Estás listo para empezar a trabajar juntos?</p>
         <p>Escribinos y contanos acerca de tu proyecto.</p>
-        <div><a href="contacto.html">contactanos</a></div>
+        <div><a href="contacto.html">Contactanos</a></div>
         
     </section>
     

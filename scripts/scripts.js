@@ -46,3 +46,25 @@ REFACTORIZAR LUEGO:
 ACTIVAR EL eventListener DE LOS BOTONES DEL MENÚ
 Y LUEGO DE HACER CLICK SOBRE ELLOS ELIMINE EL eventListener
 */
+
+//__________________________________________________________
+
+
+// function changeBackground(){
+//     var anchoVentana = window.outerWidth;
+    
+//     if (anchoVentana <= 1366){
+//         replaceWith("img/hero/mq-hero.png");
+//     }
+//     else if (anchoVentana <= 710){
+//         replaceWith("img/hero/mq-hero.png")
+//     }
+// }
+
+// function replaceWith(image){
+//     var hqBack = document.getElementById("background");
+//     var parent = hqBack.parentNode;
+//     var lqBack = hqBack.cloneNode();
+//     lqBack.src = image;
+//     parent.replaceChild(lqBack, hqBack);
+// }
