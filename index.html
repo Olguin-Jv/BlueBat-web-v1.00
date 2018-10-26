@@ -11,7 +11,7 @@
     <title>BlueBat</title>
     
 </head>
-<body> <!-- add onresize="function()" -->
+<body onresize="showBurger()">
 
     <nav> <!--BARRA DE NAVEGACIÓN-->
         <div id="burger-button">
@@ -39,7 +39,7 @@
         </div>
     </nav>
 
-    <div id="menu">
+    <div id="menu" class=".menu-background-of">
         
         <div id="desplegable">
             <div> <a class="menu-button" href="#">nosotros</a> </div>
@@ -50,7 +50,7 @@
 
     </div>
 
-    <section id="hero" onresize="changeBackground()">
+    <section id="hero">
          <div id="anchor-hero" class="anchor"></div>
 
         <img id="background" src="img/hero/hq-hero.png" alt="hero-img">

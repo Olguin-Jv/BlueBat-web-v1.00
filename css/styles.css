@@ -145,7 +145,6 @@ nav #lang button {
     max-width: 150px;
   }
   #burger-button {
-    display: initial;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -432,6 +431,8 @@ nav #lang button {
   height: 100%;
   z-index: 60;
   background: rgba(0, 0, 0, 0.68);
+}
+.menu-background-of {
   display: none;
 }
 #menu #desplegable {
@@ -891,6 +892,10 @@ el texto de cada botón alineado al centro (alineado, NO justificado)
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
+}
+.p-text {
+  line-height: 26px;
+  margin-bottom: 25px;
 }
 .portfolio-container div:hover .p-image {
   -webkit-box-shadow: 2px 2px 6px #e6e6e6;
