@@ -242,8 +242,8 @@ nav #lang button {
     transform: scale(1);
   }
   50% {
-    -webkit-transform: scale(0.7);
-    transform: scale(0.7);
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
   }
   100% {
     -webkit-transform: scale(1);
@@ -256,8 +256,8 @@ nav #lang button {
     transform: scale(1);
   }
   50% {
-    -webkit-transform: scale(0.7);
-    transform: scale(0.7);
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
   }
   100% {
     -webkit-transform: scale(1);
@@ -485,47 +485,123 @@ nav #lang button {
 }
 #menu {
   position: fixed;
-  left: 0;
   top: 55px;
   width: 100%;
   height: 100%;
   z-index: 60;
-  background: rgba(0, 0, 0, 0.68);
 }
-.menu-background-on {
+.menu-on {
   display: initial;
-  opacity: 0;
   -webkit-animation-name: menuBackgroundOn;
   animation-name: menuBackgroundOn;
-  -webkit-animation-duration: .5s;
-  animation-duration: .5s;
+  -webkit-animation-duration: 0s;
+  animation-duration: 0s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
 @-webkit-keyframes menuBackgroundOn {
   from {
-    opacity: 0;
+    left: -100%;
   }
   to {
-    opacity: 1;
+    left: 0;
   }
 }
 @keyframes menuBackgroundOn {
   from {
-    opacity: 0;
+    left: -100%;
   }
   to {
-    opacity: 1;
+    left: 0;
   }
 }
-.menu-background-off {
-  display: none;
+.menu-off {
+  left: 0%;
+  -webkit-animation-name: menuBackgroundOff;
+  animation-name: menuBackgroundOff;
+  -webkit-animation-delay: .7s;
+  animation-delay: .7s;
+  -webkit-animation-duration: 0;
+  animation-duration: 0;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+@-webkit-keyframes menuBackgroundOff {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -100%;
+  }
+}
+@keyframes menuBackgroundOff {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -100%;
+  }
 }
 #menu #desplegable {
+  position: absolute;
   width: 80%;
   max-width: 350px;
   height: 100%;
   background: white;
+}
+.desplegable-in {
+  left: -80%;
+  -webkit-animation-name: desplegableIn;
+  animation-name: desplegableIn;
+  -webkit-animation-duration: .35s;
+  animation-duration: .35s;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+@-webkit-keyframes desplegableIn {
+  from {
+    left: -80%;
+  }
+  to {
+    left: 0%;
+  }
+}
+@keyframes desplegableIn {
+  from {
+    left: -80%;
+  }
+  to {
+    left: 0%;
+  }
+}
+.desplegable-out {
+  left: 0%;
+  -webkit-animation-name: desplegableOut;
+  animation-name: desplegableOut;
+  -webkit-animation-duration: .35s;
+  animation-duration: .35s;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+@-webkit-keyframes desplegableOut {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -80%;
+  }
+}
+@keyframes desplegableOut {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -80%;
+  }
 }
 #menu #desplegable div {
   width: 100%;
@@ -545,6 +621,63 @@ nav #lang button {
 }
 #menu #desplegable div a:active {
   color: #b244fd;
+}
+#menu button {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: rgba(0, 0, 0, 0.68);
+  outline: none;
+}
+.background-button-on {
+  opacity: 1;
+  -webkit-animation-name: backgroundOn;
+  animation-name: backgroundOn;
+  -webkit-animation-duration: .7s;
+  animation-duration: .7s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+@-webkit-keyframes backgroundOn {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes backgroundOn {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.background-button-off {
+  -webkit-animation-name: backgroundOff;
+  animation-name: backgroundOff;
+  -webkit-animation-duration: .7s;
+  animation-duration: .7s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+@-webkit-keyframes backgroundOff {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes backgroundOff {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /*
 

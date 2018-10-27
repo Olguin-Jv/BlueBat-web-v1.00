@@ -3,8 +3,12 @@ var burgerButton = document.getElementById("burger");
 var burgerTop = document.getElementById("burger-top");
 var burgerMiddle = document.getElementById("burger-middle");
 var burgerBottom = document.getElementById("burger-bottom");
-var menu = document.getElementById("menu");
 var burgerState = true;
+
+//DESPLEGABLE
+var menu = document.getElementById("menu");
+var menuBackground = document.getElementById("menu-background");
+var desplegable = document.getElementById("desplegable");
 
 function activateBurguer(){
 
@@ -26,7 +30,9 @@ function activateBurguer(){
 
 function fullMenu(){
     activateBurguer();
-    toggleClass(menu, "menu-background-off", "menu-background-on");
+    toggleClass(menu, "menu-on", "menu-off");
+    toggleClass(menuBackground, "background-button-on", "background-button-off");
+    toggleClass(desplegable, "desplegable-in", "desplegable-out");
 }
 
 function backToDefault(){
