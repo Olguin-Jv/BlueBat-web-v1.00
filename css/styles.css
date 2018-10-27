@@ -490,6 +490,9 @@ nav #lang button {
   height: 100%;
   z-index: 60;
 }
+.off {
+  left: 100%;
+}
 .menu-on {
   display: initial;
   -webkit-animation-name: menuBackgroundOn;
@@ -615,6 +618,10 @@ nav #lang button {
   -ms-flex-align: center;
   align-items: center;
   text-transform: uppercase;
+}
+#menu #desplegable div a {
+  position: absolute;
+  font-size: 16px;
 }
 #menu #desplegable div a:hover {
   color: #c9c9c9;

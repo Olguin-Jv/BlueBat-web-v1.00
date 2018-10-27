@@ -9,6 +9,7 @@ var burgerState = true;
 var menu = document.getElementById("menu");
 var menuBackground = document.getElementById("menu-background");
 var desplegable = document.getElementById("desplegable");
+var menuLink = document.getElementsByClassName("menu-link");
 
 function activateBurguer(){
 
@@ -33,6 +34,11 @@ function fullMenu(){
     toggleClass(menu, "menu-on", "menu-off");
     toggleClass(menuBackground, "background-button-on", "background-button-off");
     toggleClass(desplegable, "desplegable-in", "desplegable-out");
+    for (var i = 0; i <= desplegableButtons.length; i++){
+        setTimeout(function(){
+            toggleClass(desplegableButtons[i],"menu-button-in", "menu-button-out")}, 300)
+    }
+
 }
 
 function backToDefault(){
@@ -56,7 +62,6 @@ function toggleClass(part, class1, class2) {
 //esta función sirve para devolver al menú hamburguesa a su estado original luego del resize//
 function showBurger(){
     var anchoVentana = window.outerWidth;
-    console.log(anchoVentana);
     if (anchoVentana > 710 && burgerState == false){
             activateBurguer();
         if (!burgerState){
@@ -65,4 +70,16 @@ function showBurger(){
     else {
         
     }
+}
+
+function menuButtons() {
+    for (var i = 0; i < menuLink.length; i++) {
+            menuLink[i].addEventListener("click", function(e){
+            fullMenu();
+        })
+    }
+}
+
+window.onload = function(){
+    menuButtons();
 }
