@@ -78,3 +78,14 @@ function menuButtons() {
 window.onload = function(){
     menuButtons();
 }
+
+
+// CREAR UNA FUNCION PARA OPTIMIZAR ESTA ACCIÓN DE ABAJO
+/*
+var a = document.getElementById("desplegable");
+
+setTimeout(function(){ a.children[0].className="link-buttons-in"}, 500);
+setTimeout(function(){ a.children[1].className="link-buttons-in"}, 1000);
+setTimeout(function(){ a.children[2].className="link-buttons-in"}, 1500);
+setTimeout(function(){ a.children[3].className="link-buttons-in"}, 2000);
+*/

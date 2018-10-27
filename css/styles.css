@@ -615,7 +615,6 @@ nav #lang button {
 #menu #desplegable div {
   width: 100%;
   height: 70px;
-  padding-left: 25px;
   border-bottom: 1px solid #e6e6e6;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -624,6 +623,42 @@ nav #lang button {
   -ms-flex-align: center;
   align-items: center;
   text-transform: uppercase;
+}
+.link-buttons-in {
+  opacity: 0;
+  -webkit-animation-name: linkButtonsIn;
+  animation-name: linkButtonsIn;
+  -webkit-animation-delay: .7s;
+  animation-delay: .7s;
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+@-webkit-keyframes linkButtonsIn {
+  0% {
+    opacity: 0;
+    padding-left: 0px;
+  }
+  100% {
+    opacity: 1;
+    padding-left: 25px;
+  }
+}
+@keyframes linkButtonsIn {
+  0% {
+    opacity: 0;
+    padding-left: 0px;
+  }
+  100% {
+    opacity: 1;
+    padding-left: 25px;
+  }
+}
+.link-buttons-out {
+  padding-left: 25px;
 }
 #menu #desplegable div a {
   position: absolute;
