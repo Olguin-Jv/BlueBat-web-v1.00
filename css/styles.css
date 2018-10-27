@@ -69,6 +69,12 @@ nav #top-menu {
 #burger-button {
   position: absolute;
   display: none;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 100%;
   width: 20%;
   z-index: 100;
@@ -139,7 +145,29 @@ nav #lang button {
     height: 55px;
   }
   nav #logo {
-    width: 100%;
+    width: 20%;
+    -webkit-animation-name: fullBarLogo;
+    animation-name: fullBarLogo;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  @-webkit-keyframes fullBarLogo {
+    from {
+      width: 20%;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  @keyframes fullBarLogo {
+    from {
+      width: 20%;
+    }
+    to {
+      width: 100%;
+    }
   }
   nav #logo img {
     max-width: 150px;
@@ -148,12 +176,44 @@ nav #lang button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    opacity: 0;
+    -webkit-animation-name: burgerOn;
+    animation-name: burgerOn;
+    -webkit-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-animation-delay: .6s;
+    animation-delay: .6s;
+    -webkit-animation-duration: .4s;
+    animation-duration: .4s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  @-webkit-keyframes burgerOn {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale(0.4);
+      transform: scale(0.4);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+  @keyframes burgerOn {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale(0.4);
+      transform: scale(0.4);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
   }
   nav #top-menu {
     display: none;
@@ -432,7 +492,33 @@ nav #lang button {
   z-index: 60;
   background: rgba(0, 0, 0, 0.68);
 }
-.menu-background-of {
+.menu-background-on {
+  display: initial;
+  opacity: 0;
+  -webkit-animation-name: menuBackgroundOn;
+  animation-name: menuBackgroundOn;
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+@-webkit-keyframes menuBackgroundOn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes menuBackgroundOn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.menu-background-off {
   display: none;
 }
 #menu #desplegable {
