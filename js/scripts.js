@@ -34,11 +34,6 @@ function fullMenu(){
     toggleClass(menu, "menu-on", "menu-off");
     toggleClass(menuBackground, "background-button-on", "background-button-off");
     toggleClass(desplegable, "desplegable-in", "desplegable-out");
-    for (var i = 0; i <= desplegableButtons.length; i++){
-        setTimeout(function(){
-            toggleClass(desplegableButtons[i],"menu-button-in", "menu-button-out")}, 300)
-    }
-
 }
 
 function backToDefault(){
