@@ -34,6 +34,20 @@ function fullMenu(){
     toggleClass(menu, "menu-on", "menu-off");
     toggleClass(menuBackground, "background-button-on", "background-button-off");
     toggleClass(desplegable, "desplegable-in", "desplegable-out");
+    if(!burgerState){
+        setTimeout(function(){ desplegable.children[0].className="link-buttons-in"}, 100);
+        setTimeout(function(){ desplegable.children[1].className="link-buttons-in"}, 200);
+        setTimeout(function(){ desplegable.children[2].className="link-buttons-in"}, 300);
+        setTimeout(function(){ desplegable.children[3].className="link-buttons-in"}, 400);        
+    }
+    else {
+        setTimeout(function(){
+            desplegable.children[0].className="link-buttons-out";
+            desplegable.children[1].className="link-buttons-out"
+            desplegable.children[2].className="link-buttons-out"
+            desplegable.children[3].className="link-buttons-out"
+        }, 200);
+    }
 }
 
 function backToDefault(){
@@ -58,12 +72,8 @@ function toggleClass(part, class1, class2) {
 function showBurger(){
     var anchoVentana = window.outerWidth;
     if (anchoVentana > 710 && burgerState == false){
-            activateBurguer();
-        if (!burgerState){
-        }
-    }
-    else {
-        
+            console.log("cerrar");
+            fullMenu();    
     }
 }
 
@@ -78,14 +88,3 @@ function menuButtons() {
 window.onload = function(){
     menuButtons();
 }
-
-
-// CREAR UNA FUNCION PARA OPTIMIZAR ESTA ACCIÓN DE ABAJO
-/*
-var a = document.getElementById("desplegable");
-
-setTimeout(function(){ a.children[0].className="link-buttons-in"}, 500);
-setTimeout(function(){ a.children[1].className="link-buttons-in"}, 1000);
-setTimeout(function(){ a.children[2].className="link-buttons-in"}, 1500);
-setTimeout(function(){ a.children[3].className="link-buttons-in"}, 2000);
-*/

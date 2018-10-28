@@ -628,8 +628,8 @@ nav #lang button {
   opacity: 0;
   -webkit-animation-name: linkButtonsIn;
   animation-name: linkButtonsIn;
-  -webkit-animation-delay: .7s;
-  animation-delay: .7s;
+  -webkit-animation-delay: .1s;
+  animation-delay: .1s;
   -webkit-animation-duration: .5s;
   animation-duration: .5s;
   -webkit-animation-fill-mode: forwards;
@@ -658,7 +658,7 @@ nav #lang button {
   }
 }
 .link-buttons-out {
-  padding-left: 25px;
+  opacity: 0;
 }
 #menu #desplegable div a {
   position: absolute;
