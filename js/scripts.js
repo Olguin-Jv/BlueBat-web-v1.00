@@ -72,7 +72,6 @@ function toggleClass(part, class1, class2) {
 function showBurger(){
     var anchoVentana = window.outerWidth;
     if (anchoVentana > 710 && burgerState == false){
-        console.log("cerrar");
         fullMenu();    
     }
 }
@@ -81,7 +80,6 @@ function menuButtons() {
     for (var i = 0; i < menuLink.length; i++) {
             menuLink[i].addEventListener("click", function(e){
             fullMenu();
-            console.log("algo");
         })
     }
 }
