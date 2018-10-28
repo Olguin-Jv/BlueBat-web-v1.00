@@ -43,9 +43,9 @@ function fullMenu(){
     else {
         setTimeout(function(){
             desplegable.children[0].className="link-buttons-out";
-            desplegable.children[1].className="link-buttons-out"
-            desplegable.children[2].className="link-buttons-out"
-            desplegable.children[3].className="link-buttons-out"
+            desplegable.children[1].className="link-buttons-out";
+            desplegable.children[2].className="link-buttons-out";
+            desplegable.children[3].className="link-buttons-out";
         }, 200);
     }
 }
@@ -72,8 +72,8 @@ function toggleClass(part, class1, class2) {
 function showBurger(){
     var anchoVentana = window.outerWidth;
     if (anchoVentana > 710 && burgerState == false){
-            console.log("cerrar");
-            fullMenu();    
+        console.log("cerrar");
+        fullMenu();    
     }
 }
 
@@ -81,6 +81,7 @@ function menuButtons() {
     for (var i = 0; i < menuLink.length; i++) {
             menuLink[i].addEventListener("click", function(e){
             fullMenu();
+            console.log("algo");
         })
     }
 }
