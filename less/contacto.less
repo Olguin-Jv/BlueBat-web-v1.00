@@ -10,7 +10,7 @@ header {
     display: flex;
     align-items: flex-end;
     // border: 2px solid pink;
-}
+} 
 
 header img {
     position: absolute;
@@ -97,6 +97,7 @@ span input {
 }
 
 #options {
+    position: relative;
     width: 100%;
     max-width: 1000px;
     min-width: 700px;
@@ -106,6 +107,46 @@ span input {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
+#options-dos {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.244);
+    display: flex;
+    justify-content: space-between;
+}
+
+.opt {
+    width: auto;
+    height: auto;
+}
+.opt div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.opt div p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.opt div input {
+    display: none;
+    pointer-events: none;
+}
+
+.opt div button {
+    display: initial;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background: grey;
+    cursor: pointer;
+    border: 4px solid white;
+}
+
 
 #options span {
     height: fit-content;
@@ -120,7 +161,7 @@ span input {
     font-weight: 600;
 }
 
-#options span input[type=radio]{
+#options span input[type=checkbox]{
     background: none;
     width: 25px;
 }
@@ -179,6 +220,22 @@ footer {
 
     #data-inputs span {
         width: 100%;
+    }
+
+    #options-dos {
+        flex-direction: column;
+        justify-content: initial;
+        align-items: flex-start;
+    }
+
+    .opt {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-bottom: 12px;
+    }
+
+    .opt div p {
+        padding-left: 10px;
     }
 
     #options {
