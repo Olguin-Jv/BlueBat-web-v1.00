@@ -11,7 +11,7 @@
     <title>BlueBat</title>
     
 </head>
-<body onresize="showBurger()">
+<body onresize="showBurger()" onscroll="onScrollAction()">
 
     <nav> <!--BARRA DE NAVEGACIÓN-->
 
@@ -29,10 +29,10 @@
         
         <div id="top-menu">
             <div>
-                <a href="#anchor-nosotros">nosotros</a>
-                <a href="#anchor-servicios">servicios</a>
-                <a href="#anchor-portfolio">portfolio</a>
-                <a href="contacto.html">contacto</a>
+                <a id="btn-nosotros" href="#anchor-nosotros">nosotros</a>
+                <a id="btn-servicios" href="#anchor-servicios">servicios</a>
+                <a id="btn-portfolio" href="#anchor-portfolio">portfolio</a>
+                <a id="btn-contacto" href="contacto.html">contacto</a>
             </div>
         
         </div>
@@ -57,14 +57,14 @@
     <section id="hero">
          <div id="anchor-hero" class="anchor"></div>
 
-        <img id="background" src="img/hero/hq-hero.png" alt="hero-img">
-        <img id="lq-background" src="img/hero/lq-hero.png" alt="">
-        <div id="down-arrow"><a href="#anchor-nosotros"><img src="img/flechasHome.png" alt="hero-down-arrow"></a></div>
+        <img src="img/heroImg.png" alt="hero image">
+
     </section>
     
 
     <section id="nosotros">
         <div id="anchor-nosotros" class="anchor"></div>
+        <div id="mark-nosotros" class="mark"></div>
 
         <div class="title">
             <h1>Nosotros</h1>
@@ -96,6 +96,7 @@
     <section id="servicios">
         <div id="servicios-background"></div>
         <div id="anchor-servicios" class="anchor"></div>
+        <div id="mark-servicios" class="mark"></div>
 
         <div class="title">
             <h1>Servicios</h1>
@@ -164,6 +165,7 @@
 
     <section id="portfolio">
          <div id="anchor-portfolio" class="anchor"></div>
+         <div id="mark-portfolio" class="mark"></div>
 
         <div class="title">
             <h1>Portfolio</h1>
@@ -186,6 +188,8 @@
     </section>
 
     <section id="contactanos">
+        <div id="mark-contacto" class="mark"></div>
+
         <img src="img/white-airplane.png" alt="white-airplane">
         <p>¿Estás listo para empezar a trabajar juntos?</p>
         <p>Escribinos y contanos acerca de tu proyecto.</p>
@@ -223,5 +227,6 @@
 
    </footer>
 <script src="js/scripts.js"></script>
+<script src="js/scroll.js"></script>
 </body>
 </html>

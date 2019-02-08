@@ -28,6 +28,13 @@ a:active {
   height: 70px;
   top: -70px;
 }
+.mark {
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  top: 10%;
+  pointer-events: none;
+}
 @media screen and (max-width: 710px) {
   .anchor {
     height: 55px;
@@ -131,20 +138,6 @@ span input {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-#options-dos {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.244);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
 }
 .opt {
   width: auto;
@@ -169,40 +162,19 @@ span input {
   display: none;
   pointer-events: none;
 }
-.opt div button {
+.radius {
   display: initial;
   width: 30px;
   height: 30px;
   border-radius: 100%;
-  background: grey;
   cursor: pointer;
-  border: 4px solid white;
+  border: 4px solid grey;
 }
-#options span {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+.r-unselected {
+  background: rgba(128, 128, 128, 0.721);
 }
-#options span p {
-  font-size: 20px;
-  font-weight: 600;
-}
-#options span input[type=checkbox] {
-  background: none;
-  width: 25px;
+.r-selected {
+  background: blue;
 }
 textarea {
   width: 100%;
@@ -335,7 +307,7 @@ footer {
   #options {
     min-width: initial;
   }
-  #options span p {
+  .opt div p {
     font-size: 18px;
   }
 }
@@ -352,7 +324,7 @@ footer {
   #data-inputs span {
     width: 100%;
   }
-  #options-dos {
+  #options {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;

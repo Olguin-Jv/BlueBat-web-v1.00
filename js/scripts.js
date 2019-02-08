@@ -11,9 +11,9 @@ var menuBackground = document.getElementById("menu-background");
 var desplegable = document.getElementById("desplegable");
 var menuLink = document.getElementsByClassName("menu-link");
 
-function activateBurguer(){
+function activateBurguer() {
 
-    if (burgerState){
+    if (burgerState) {
         burgerState = false;
     }
     else {
@@ -25,39 +25,39 @@ function activateBurguer(){
     toggleClass(burgerBottom, "bottom-animate", "bottom-deanimate");
 
     burgerButton.classList.toggle("bounce");
-    setTimeout(function(){backToDefault()}, 500);
+    setTimeout(function () { backToDefault() }, 500);
 
 }
 
-function fullMenu(){
+function fullMenu() {
     activateBurguer();
     toggleClass(menu, "menu-on", "menu-off");
     toggleClass(menuBackground, "background-button-on", "background-button-off");
     toggleClass(desplegable, "desplegable-in", "desplegable-out");
-    if(!burgerState){
-        setTimeout(function(){ desplegable.children[0].className="link-buttons-in"}, 100);
-        setTimeout(function(){ desplegable.children[1].className="link-buttons-in"}, 200);
-        setTimeout(function(){ desplegable.children[2].className="link-buttons-in"}, 300);
-        setTimeout(function(){ desplegable.children[3].className="link-buttons-in"}, 400);        
+    if (!burgerState) {
+        setTimeout(function () { desplegable.children[0].className = "link-buttons-in" }, 100);
+        setTimeout(function () { desplegable.children[1].className = "link-buttons-in" }, 200);
+        setTimeout(function () { desplegable.children[2].className = "link-buttons-in" }, 300);
+        setTimeout(function () { desplegable.children[3].className = "link-buttons-in" }, 400);
     }
     else {
-        setTimeout(function(){
-            desplegable.children[0].className="link-buttons-out";
-            desplegable.children[1].className="link-buttons-out";
-            desplegable.children[2].className="link-buttons-out";
-            desplegable.children[3].className="link-buttons-out";
+        setTimeout(function () {
+            desplegable.children[0].className = "link-buttons-out";
+            desplegable.children[1].className = "link-buttons-out";
+            desplegable.children[2].className = "link-buttons-out";
+            desplegable.children[3].className = "link-buttons-out";
         }, 200);
     }
 }
 
-function backToDefault(){
+function backToDefault() {
     burgerButton.classList.toggle("bounce");
 }
 
 ///////////////////////
 // ESTA FUNCIÓN SIRVE PARA TOGGLEAR CLASES A UN ELEMENTO DADO 
 function toggleClass(part, class1, class2) {
-    if ( (part.classList.contains(class1) == false) &&  (part.classList.contains(class2) == false)) {
+    if ((part.classList.contains(class1) == false) && (part.classList.contains(class2) == false)) {
         part.classList.add(class1);
     } else if (part.classList.contains(class1)) {
         part.classList.remove(class1);
@@ -69,21 +69,23 @@ function toggleClass(part, class1, class2) {
 }
 
 //esta función sirve para devolver al menú hamburguesa a su estado original luego del resize//
-function showBurger(){
+function showBurger() {
     var anchoVentana = window.outerWidth;
-    if (anchoVentana > 710 && burgerState == false){
-        fullMenu();    
+    if (anchoVentana > 710 && burgerState == false) {
+        fullMenu();
     }
 }
 
-function menuButtons() {
+function activateButtons() {
     for (var i = 0; i < menuLink.length; i++) {
-            menuLink[i].addEventListener("click", function(e){
+        menuLink[i].addEventListener("click", function (e) {
             fullMenu();
         })
     }
 }
+window.onload = function () {
+    console.log('asssa')
+    activateButtons();
 
-window.onload = function(){
-    menuButtons();
 }
+

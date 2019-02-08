@@ -105,16 +105,6 @@ span input {
     padding-bottom: 35px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-#options-dos {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.244);
-    display: flex;
-    justify-content: space-between;
 }
 
 .opt {
@@ -137,33 +127,19 @@ span input {
     pointer-events: none;
 }
 
-.opt div button {
+.radius {
     display: initial;
     width: 30px;
     height: 30px;
     border-radius: 100%;
-    background: grey;
     cursor: pointer;
-    border: 4px solid white;
+    border: 4px solid grey;
 }
-
-
-#options span {
-    height: fit-content;
-    width: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.r-unselected {
+    background: rgba(128, 128, 128, 0.721);
 }
-
-#options span p {
-    font-size: 20px;
-    font-weight: 600;
-}
-
-#options span input[type=checkbox]{
-    background: none;
-    width: 25px;
+.r-selected {
+    background: blue;
 }
 
 textarea {
@@ -198,7 +174,7 @@ footer {
         min-width: initial;
     }
 
-    #options span p {
+    .opt div p {
         font-size: 18px;
     }
 
@@ -222,7 +198,7 @@ footer {
         width: 100%;
     }
 
-    #options-dos {
+    #options {
         flex-direction: column;
         justify-content: initial;
         align-items: flex-start;
