@@ -858,7 +858,7 @@ el texto de cada botón alineado al centro (alineado, NO justificado)
 }
 #servicios {
   position: relative;
-  background: rgba(21, 104, 204, 0.05);
+  background: rgba(21, 104, 204, 0.1);
 }
 #servicios-background {
   position: absolute;
@@ -898,6 +898,10 @@ el texto de cada botón alineado al centro (alineado, NO justificado)
 .title .icon-id img {
   height: 100%;
   width: auto;
+}
+input[type='submit'] {
+  color: red;
+  font-size: 70px;
 }
 @media screen and (max-width: 1366px) {
   #nosotros {
