@@ -11,19 +11,30 @@ $optRedes = isset($_POST['opt-redes']) ? $_POST['opt-redes'] : '';
 $optOtros = isset($_POST['opt-otros']) ? $_POST['opt-otros'] : '';
 $texto = isset($_POST['textarea']) ? $_POST['textarea'] : '';
 
-$motivo = 'Motivo del mensaje:\r\n';
+$motivo = 'Motivo del mensaje:</br><ul>';
 
-$optWeb ? $motivo .= 'Web\r\n': '';
-$optArq ? $motivo .= 'Arquitectura de la Información\r\n': '';
-$optBranding ? $motivo .= 'Branding\r\n': '';
-$optRedes ? $motivo .= 'Redes\r\n': '';
-$optOtros ? $motivo .= 'Otros\r\n': '';
+$optWeb ? $motivo .= '<li>Web</li></li>': '';
+$optArq ? $motivo .= '<li>Arquitectura de la Información</li>': '';
+$optBranding ? $motivo .= '<li>Branding</li>': '';
+$optRedes ? $motivo .= '<li>Redes</li>': '';
+$optOtros ? $motivo .= '<li>Otros</li>': '';
+$motivo .= '</ul>';
 
+$headers = "From: " . $correo ."\r\n";
+$headers .= "MIME-Version: 1.0\r\n";
+$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
+// $contenido = 'Nombre: '. $nombre .'\r\nCorreo: '. $correo.'\r\nReferencia: '. $referencia.'\r\n'.$motivo.'Mensaje:\r\n' . $texto;
 
-$contenido = 'Nombre: '. $nombre .'\r\nCorreo: '. $correo.'\r\nReferencia: '. $referencia.'\r\n'.$motivo.'Mensaje:\r\n' . $texto;
+$contenido = '<html><body>';
+$contenido .= '<p>Nombre: '.$nombre.'</p>';
+$contenido .= '<p>Correo: '.$correo.'</p>';
+$contenido .= '<p>Referencia: '.$referencia.'</p>';
+$contenido .= $motivo;
+$contenido .= '<p>Mensaje: </br>'.$texto.'</p>';
 
-mail($destino, 'Contacto', $contenido);
+mail($destino, 'Contacto', $contenido, $headers);
 header('Location:index.html');
+
 
 ?>
