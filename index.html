@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,24 +10,26 @@
     <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link rel="shortcut icon" href="img/webicon/BlueBatIcon.png" />
     <title>BlueBat</title>
-    
+
 </head>
+
 <body onresize="showBurger()" onscroll="onScrollAction()">
 
-    <nav> <!--BARRA DE NAVEGACIÓN-->
+    <nav>
+        <!--BARRA DE NAVEGACIÓN-->
 
         <div id="burger-button">
             <div id="burger" class="burger-menu">
-                    <span id="burger-top" class="top"></span>
-                    <span id="burger-middle" class="middle"></span>
-                    <span id="burger-bottom" class="bottom"></span>
-            
-                    <button onclick="fullMenu()"></button>
-            </div>  
+                <span id="burger-top" class="top"></span>
+                <span id="burger-middle" class="middle"></span>
+                <span id="burger-bottom" class="bottom"></span>
+
+                <button onclick="fullMenu()"></button>
+            </div>
         </div>
-        
+
         <div id="logo"><img src="img/BlueBatWEB.png" alt="ligo-BlueBat"></div>
-        
+
         <div id="top-menu">
             <div>
                 <a id="btn-nosotros" href="#anchor-nosotros">nosotros</a>
@@ -34,7 +37,7 @@
                 <a id="btn-portfolio" href="#anchor-portfolio">portfolio</a>
                 <a id="btn-contacto" href="contacto.html">contacto</a>
             </div>
-        
+
         </div>
         <div id="lang">
             <button>es</button>
@@ -42,7 +45,7 @@
     </nav>
 
     <div id="menu" class="off">
-    
+
         <button onclick="fullMenu()" id="menu-background" class="background-button-on"></button>
 
         <div id="desplegable" class="">
@@ -55,12 +58,14 @@
     </div>
 
     <section id="hero">
-         <div id="anchor-hero" class="anchor"></div>
+        <div id="anchor-hero" class="anchor"></div>
 
-        <img src="img/heroImg.png" alt="hero image">
+        <div id="hero-container">
+            <img src="img/heroImg.png" alt="hero image">
+        </div>
 
     </section>
-    
+
 
     <section id="nosotros">
         <div id="anchor-nosotros" class="anchor"></div>
@@ -76,9 +81,12 @@
                     <div id="description-nosotros">
                         <p>
                             <strong>BlueBat</strong> es una agencia de diseño de productos digitales fundada en 2017.
-                            Creemos que el mix tecnólogia y diseño tiene el potencial necesario para cambiar la realidad de tu negocio. Desde sitios web y aplicaciones móviles,
-                            hasta branding corporativo. Estamos abocados en encontrar la alquimia perfecta para tu negocio. 
-                            Todos y cada uno de nosotros amamos lo que hacemos y trabajamos todos los días creando productos digitales de alta calidad... porque no sabemos hacerlo de otra manera.
+                            Creemos que el mix tecnólogia y diseño tiene el potencial necesario para cambiar la realidad
+                            de tu negocio. Desde sitios web y aplicaciones móviles,
+                            hasta branding corporativo. Estamos abocados en encontrar la alquimia perfecta para tu
+                            negocio.
+                            Todos y cada uno de nosotros amamos lo que hacemos y trabajamos todos los días creando
+                            productos digitales de alta calidad... porque no sabemos hacerlo de otra manera.
                             Siempre estamos buscando nuevos desafíos.
                         </p>
                     </div>
@@ -87,7 +95,7 @@
                         <img id="h-img" src="img/h-process.png" alt="proceso">
                         <img id="v-img" src="img/v-process.png" alt="proceso">
                     </div>
-           
+
                 </div>
             </div>
         </div>
@@ -103,7 +111,7 @@
             <div class="icon-id"><img src="img/dio.png" alt=""></div>
         </div>
         <div class="content">
-            
+
             <div id="container-servicios">
 
                 <div class="left">
@@ -111,7 +119,8 @@
                         <div class="box-icon"><img src="img/servicios/Servicio-Desarrollo.png" alt=""></div>
                         <div class="description">
                             <h3>Diseño y desarrollo web</h3>
-                            <p>¡La especialidad de la casa! Diseñamos, maquetamos y programamos tu página Web. Nos encargamos del dominio y del hosting para que no te preocupes por nada.</p>
+                            <p>¡La especialidad de la casa! Diseñamos, maquetamos y programamos tu página Web. Nos
+                                encargamos del dominio y del hosting para que no te preocupes por nada.</p>
                         </div>
                     </span>
                 </div>
@@ -120,7 +129,9 @@
                     <span class="box">
                         <div class="description">
                             <h3>diseño ux</h3>
-                            <p>Recorridos intuitivos y concisos para que los usuarios no se pierdan dentro de los productos digitales. Presentamos la información de la manera más apropiada para cada producto.</p>
+                            <p>Recorridos intuitivos y concisos para que los usuarios no se pierdan dentro de los
+                                productos digitales. Presentamos la información de la manera más apropiada para cada
+                                producto.</p>
                         </div>
                         <div class="box-icon"><img src="img/servicios/Servicio-UXUI.png" alt=""></div>
                     </span>
@@ -131,27 +142,33 @@
                         <div class="box-icon"><img src="img/servicios/Servicio-Branding.png" alt=""></div>
                         <div class="description">
                             <h3>branding corporativo</h3>
-                            <p>Creando la imágen de una empresa construimos la forma en la que los usuarios perciben la marca. Creamos en el imaginario social la imágen correcta para tu empresa y/o producto.</p>
+                            <p>Creando la imágen de una empresa construimos la forma en la que los usuarios perciben la
+                                marca. Creamos en el imaginario social la imágen correcta para tu empresa y/o producto.
+                            </p>
                         </div>
                     </span>
                 </div>
-                
+
                 <div class="right">
                     <span class="box">
                         <div class="description">
                             <h3>community management</h3>
-                            <p>La presencia que tenga tu empresa en las redes sociales y el impacto que generes en ellas va a marcar la diferencia en la cantidad de clientes que consigas. ¡Manejamos todas las redes sociales!</p>
+                            <p>La presencia que tenga tu empresa en las redes sociales y el impacto que generes en ellas
+                                va a marcar la diferencia en la cantidad de clientes que consigas. ¡Manejamos todas las
+                                redes sociales!</p>
                         </div>
                         <div class="box-icon"><img src="img/servicios/Servicio-CM.png" alt=""></div>
                     </span>
                 </div>
-                
+
                 <div class="left">
                     <span class="box">
                         <div class="box-icon"><img src="img/servicios/Servicio-SEO.png" alt=""></div>
                         <div class="description">
                             <h3>SEO</h3>
-                            <p>Creando la imágen de una empresa construimos la forma en la que los usuarios perciben la marca. Creamos en el imaginario social la imágen correcta para tu empresa y/o producto.</p>
+                            <p>Creando la imágen de una empresa construimos la forma en la que los usuarios perciben la
+                                marca. Creamos en el imaginario social la imágen correcta para tu empresa y/o producto.
+                            </p>
                         </div>
                     </span>
                 </div>
@@ -161,24 +178,32 @@
 
         </div>
     </section>
-    
+
 
     <section id="portfolio">
-         <div id="anchor-portfolio" class="anchor"></div>
-         <div id="mark-portfolio" class="mark"></div>
+        <div id="anchor-portfolio" class="anchor"></div>
+        <div id="mark-portfolio" class="mark"></div>
 
         <div class="title">
             <h1>Portfolio</h1>
             <div class="icon-id"><img src="img/dio.png" alt=""></div>
         </div>
         <div class="content">
-            
+
             <div class="portfolio-container">
 
-                <div> <a href=""> <img class="p-image" src="img/portfolio/port1MC.png" alt=""> </a> <p class="p-text">Carvallo & Marino - Arquitectos</p> </div>
-                <div> <a href=""> <img class="p-image" src="img/empty-pattern.png" alt=""> </a> <p class="p-text">Hola mundo!</p> </div>
-                <div> <a href=""> <img class="p-image" src="img/empty-pattern.png" alt=""> </a> <p class="p-text">Hola mundo!</p> </div>
-                <div> <a href=""> <img class="p-image" src="img/empty-pattern.png" alt=""> </a> <p class="p-text">Hola mundo!</p> </div>
+                <div> <a href=""> <img class="p-image" src="img/portfolio/port1MC.png" alt=""> </a>
+                    <p class="p-text">Carvallo & Marino - Arquitectos</p>
+                </div>
+                <div> <a href=""> <img class="p-image" src="img/empty-pattern.png" alt=""> </a>
+                    <p class="p-text">Hola mundo!</p>
+                </div>
+                <div> <a href=""> <img class="p-image" src="img/empty-pattern.png" alt=""> </a>
+                    <p class="p-text">Hola mundo!</p>
+                </div>
+                <div> <a href=""> <img class="p-image" src="img/empty-pattern.png" alt=""> </a>
+                    <p class="p-text">Hola mundo!</p>
+                </div>
 
             </div>
 
@@ -194,11 +219,11 @@
         <p>¿Estás listo para empezar a trabajar juntos?</p>
         <p>Escribinos y contanos acerca de tu proyecto.</p>
         <div><a href="contacto.html">Contactanos</a></div>
-        
+
     </section>
-    
-<!-- Esta es la maqueta vacía de una sección -->
-<!--<section id="portfolio">
+
+    <!-- Esta es la maqueta vacía de una sección -->
+    <!--<section id="portfolio">
         <div id="anchor-portfolio" class="anchor"></div>
 
        <div class="title"><h1>Portfolio</h1></div>
@@ -207,7 +232,7 @@
        </div>
    </section>-->
 
-   <footer>
+    <footer>
 
         <div id="redes">
             <a href=""><img src="img/instagram.png" alt="instagram"></a>
@@ -223,10 +248,11 @@
                 <p>info@bluebat.co</p>
             </div>
         </div>
-    
 
-   </footer>
-<script src="js/scripts.js"></script>
-<script src="js/scroll.js"></script>
+
+    </footer>
+    <script src="js/scripts.js"></script>
+    <script src="js/scroll.js"></script>
 </body>
+
 </html>

@@ -23,5 +23,6 @@ for (var i = 0; i < radioButtons.length; i++) {
         markCheckbox(this.children[0]);
         var elem = document.getElementsByName(`opt-${this.dataset.id}`) ;
         elem[0].click();
+        console.log(elem[0].value)
     })
 }
