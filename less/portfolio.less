@@ -1,84 +1,96 @@
-
-
-.portfolio-container {
-    width: 95%;
-    height: fit-content;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around; 
-    flex-wrap: wrap;
-    padding: 50px 10% 0px 10%;
-}
-
-.portfolio-container div {
-    width: 44%;
-    height: auto;
-    margin: 2% 1%;
-    // border: 1px solid blue;
-    // overflow: hidden;
-    transition: .3s;
-}
-
-.portfolio-container div:hover {
-    transform: translate(-4px, -4px) scale(1.01);
-    // box-shadow: 2px 2px 4px @gris-claro;
-}
-
-.portfolio-container div img {
+#portfolio {
+    position: relative;
     width: 100%;
+    height: 453px;
+}
+
+#p-line {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+#p-line div{
+    height: 3px;
+    width: 100%;
+    background: #475dfc;
+}
+#p-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.p-container {
+    position: relative;
+    width: 60%;
+    height: fit-content;
+    max-width: 750px;
+    min-width: 600px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+.p-container img {
+    margin: 0 30px;
+    width: 78px;
     height: auto;
-    border: 1px solid @gris-claro;
 }
 
-.p-image, .p-text {
-    transition: .3s;
+.port-button {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end
+
 }
 
-.p-text {
-    line-height: 26px;
-    margin-bottom: 25px;
-}
-
-.portfolio-container div:hover .p-image {
-    box-shadow: 2px 2px 6px @gris-claro;
-}
-
-.portfolio-container div:hover .p-text {
-    text-shadow: 2px 2px 6px @gris-claro;
-}
-
-.portfolio-container div p {
-    font-size: 24px;
-    font-weight: 500;
-}
-
-#ver-mas {
-    text-align: center;
-    margin: 30px 0;
-    
-}
-
-#ver-mas a {
-    text-transform: uppercase;
-    font-size: 18px;
+.port-button button {
+    width: 300px;
+    height: 70px;
+    border-radius: 100px;
+    background: #b244fd;
+    border: none;
+    outline: none;
+    font-size: 25px;
     font-weight: 700;
+    letter-spacing: 1px;
+    color: white;
+    text-transform: uppercase;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
+.p-title {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    text-align: center;
+}
 
-@media screen and (max-width: 666px) {
+.p-title p{
+    font-size: 25px;
+    font-weight: 300px;
+    letter-spacing: 5px;
+    color: #4a4a4a;
+}
 
-    .portfolio-container {
+@media screen and (min-width: 650px){
+
+    #p-container {
         width: 100%;
+        max-width: initial;
     }
 
 }
 
-@media screen and (max-width: 580px) {
-
-    .portfolio-container div {
-        width: 100%;
-        margin: 0;
-        padding-bottom: 15px;
-    }
-
-}
+////corregir

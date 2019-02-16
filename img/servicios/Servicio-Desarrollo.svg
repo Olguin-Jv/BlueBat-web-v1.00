@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="170px" height="170px" viewBox="0 0 170 170" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>DISEÑO Y DESARROLLO WEB</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-7.4%" y="-7.4%" width="114.8%" height="115.4%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <polygon id="path-2" points="0 0.106 161.894 0.106 161.894 162 0 162"></polygon>
+        <filter x="-15.0%" y="-16.4%" width="130.0%" height="132.9%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Bluebat-HeroImg" transform="translate(-466.000000, -1832.000000)">
+            <g id="DISEÑO-Y-DESARROLLO-WEB" filter="url(#filter-1)" transform="translate(470.000000, 1834.000000)">
+                <g id="Group-3">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M161.8943,81.048 C161.8973,125.754 125.6583,161.997 80.9523,162 C36.2463,162.003 0.0023,125.763 -0.0007,81.058 C-0.0017,36.352 36.2363,0.109 80.9423,0.106 C125.6483,0.103 161.8913,36.342 161.8943,81.048" id="Fill-1" fill="#B244FD" mask="url(#mask-3)"></path>
+                </g>
+                <g id="Compu" filter="url(#filter-4)" transform="translate(41.000000, 45.000000)" fill="#FFFFFF">
+                    <path d="M77.0662,46.525 L3.6202,46.529 L3.6182,8.148 C3.6182,5.275 5.9542,2.939 8.8262,2.939 L71.8552,2.935 C74.7272,2.935 77.0642,5.271 77.0642,8.143 L77.0662,46.525 Z M77.0672,52.927 C77.0672,55.799 74.7312,58.136 71.8582,58.136 L8.8292,58.14 C5.9582,58.14 3.6212,55.804 3.6212,52.932 L3.6202,49.381 L77.0672,49.377 L77.0672,52.927 Z M32.2842,69.749 L34.7852,60.99 L45.9042,60.989 L48.4062,69.748 L32.2842,69.749 Z M79.9192,52.926 L79.9172,8.143 C79.9112,3.703 76.2952,0.088 71.8542,0.083 L8.8262,0.087 C4.3862,0.092 0.7702,3.708 0.7652,8.148 L0.7682,52.932 C0.7742,57.371 4.3902,60.986 8.8302,60.991 L31.8182,60.99 L29.3182,69.749 L23.9912,69.749 L23.9912,72.602 L56.6992,72.6 L56.6992,69.747 L51.3722,69.748 L48.8702,60.989 L71.8592,60.988 C76.2982,60.982 79.9142,57.366 79.9192,52.926 L79.9192,52.926 Z" id="Fill-4"></path>
+                    <polygon id="Fill-6" points="41.0544 13.483 34.5424 36.245 37.2834 37.029 43.7954 14.267"></polygon>
+                    <path d="M22.6658,26.3912 L31.1238,19.3412 L29.2988,17.1512 L19.5258,25.2962 C19.2328,25.5402 19.0528,25.8842 19.0188,26.2632 C18.9838,26.6422 19.0998,27.0122 19.3438,27.3052 C19.3988,27.3702 19.4598,27.4322 19.5258,27.4872 L29.2998,35.6312 L31.1248,33.4402 L22.6658,26.3912 Z" id="Fill-8"></path>
+                    <path d="M60.1775,24.3131 C60.1225,24.2471 60.0615,24.1861 59.9955,24.1311 L50.2215,15.9871 L48.3965,18.1771 L56.8565,25.2261 L48.3975,32.2761 L50.2235,34.4661 L59.9955,26.3211 C60.5995,25.8181 60.6815,24.9171 60.1775,24.3131" id="Fill-10"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

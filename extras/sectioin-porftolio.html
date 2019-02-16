@@ -1,0 +1,121 @@
+<style>
+
+
+
+.portfolio-container {
+    width: 95%;
+    height: fit-content;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+    padding: 50px 10% 0px 10%;
+}
+
+.portfolio-container div {
+    width: 44%;
+    height: auto;
+    margin: 2% 1%;
+    // border: 1px solid blue;
+    // overflow: hidden;
+    transition: .3s;
+}
+
+.portfolio-container div:hover {
+    transform: translate(-4px, -4px) scale(1.01);
+    // box-shadow: 2px 2px 4px @gris-claro;
+}
+
+.portfolio-container div img {
+    width: 100%;
+    height: auto;
+    border: 1px solid @gris-claro;
+}
+
+.p-image, .p-text {
+    transition: .3s;
+}
+
+.p-text {
+    line-height: 26px;
+    margin-bottom: 25px;
+}
+
+.portfolio-container div:hover .p-image {
+    box-shadow: 2px 2px 6px @gris-claro;
+}
+
+.portfolio-container div:hover .p-text {
+    text-shadow: 2px 2px 6px @gris-claro;
+}
+
+.portfolio-container div p {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#ver-mas {
+    text-align: center;
+    margin: 30px 0;
+    
+}
+
+#ver-mas a {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+@media screen and (max-width: 666px) {
+
+    .portfolio-container {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 580px) {
+
+    .portfolio-container div {
+        width: 100%;
+        margin: 0;
+        padding-bottom: 15px;
+    }
+
+}
+
+</style>
+
+
+    <section id="portfolio">
+        <div id="_portfolio" class="anchor"></div>
+        <div id="mark-portfolio" class="mark"></div>
+
+        <div class="title">
+            <h2>Portfolio</h2>
+            <div class="icon-id"><img src="img/dio.png" alt=""></div>
+        </div>
+        <div class="content">
+
+            <div class="portfolio-container">
+
+                <div> <a href=""> <img class="p-image" src="img/portfolio/port1MC.png" alt=""> </a>
+                    <p class="p-text">Carvallo & Marino - Arquitectos</p>
+                </div>
+                <div> <a href=""> <img class="p-image" src="img/empty-pattern.png" alt=""> </a>
+                    <p class="p-text">Hola mundo!</p>
+                </div>
+                <div> <a href=""> <img class="p-image" src="img/empty-pattern.png" alt=""> </a>
+                    <p class="p-text">Hola mundo!</p>
+                </div>
+                <div> <a href=""> <img class="p-image" src="img/empty-pattern.png" alt=""> </a>
+                    <p class="p-text">Hola mundo!</p>
+                </div>
+
+            </div>
+
+            <div id="ver-mas"> <a href="https://www.behance.net/mcelestelugo">ver más trabajos&nbsp; &gt;&gt;</a> </div>
+
+        </div>
+    </section>

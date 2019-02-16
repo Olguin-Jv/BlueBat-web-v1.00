@@ -84,7 +84,6 @@ function activateButtons() {
     }
 }
 window.onload = function () {
-    console.log('asssa')
     activateButtons();
 
 }
