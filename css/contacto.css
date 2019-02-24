@@ -129,7 +129,14 @@ p.text {
 p.grey {
   font-size: 18px;
   padding-left: 10px;
+  font-weight: 300;
   color: grey;
+  line-height: 20px;
+}
+#data-inputs span .grey {
+  color: #333333;
+  font-weight: 400;
+  line-height: 26px;
 }
 span input {
   outline: none;
@@ -216,6 +223,7 @@ textarea {
   outline: none;
 }
 #input-btn {
+  position: relative;
   width: 100%;
   height: auto;
   display: -webkit-box;
@@ -226,17 +234,19 @@ textarea {
   justify-content: center;
 }
 input[type='submit'] {
-  color: #475dfc;
+  color: #fff;
   border-radius: 40px;
   font-size: 24px;
   text-transform: uppercase;
-  font-weight: 900;
-  border: 1px solid #475dfc;
+  font-weight: 700;
+  border: none;
   padding: 10px 35px;
-  background: none;
+  background: #b244fd;
   margin-bottom: 50px;
   cursor: pointer;
   outline: none;
+  -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
 }
 footer {
   position: relative;
@@ -331,7 +341,7 @@ footer {
     -ms-flex-line-pack: center;
     align-content: center;
     padding-top: 15px;
-    border-top: 1px solid grey;
+    border-top: 1px solid #ccc;
   }
   #f-data {
     width: -webkit-fit-content;
@@ -427,13 +437,29 @@ footer {
 }
 @media screen and (max-width: 480px) {
   header {
-    padding: 50px 30px;
+    padding: 40px 0px;
+  }
+  .back-arrow {
+    left: 22px;
+  }
+  .back-arrow img {
+    width: 70%;
   }
   .header-img {
     right: 30px;
+    width: 75px;
+    height: auto;
+  }
+  .text {
+    text-align: justify;
   }
   #formulario form {
-    margin-left: 30px;
+    width: calc(100% - 14px);
+    margin-left: 14px;
+    padding-right: 14px;
+  }
+  span input {
+    width: 100%;
   }
   textarea {
     margin-top: 20px;
